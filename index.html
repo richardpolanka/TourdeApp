@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tour de App</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/query.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a745121e69.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="afterLoad()">
+    <!-- <header>
+        <div><i class="fa-solid fa-house"></i></div>
+        <div><i class="fa-solid fa-user"></i></div>
+    </header> -->
+    <main>
+        <div id="newActivityWindow">
+          <table>
+            <tr>
+                <td>Jazyk</td>
+                <td><input type="text" id="jazyk"></td>
+            </tr>
+            <tr>
+                <td>Aktivita</td>
+                <td><input type="text" id="aktivita"></td>
+            </tr>
+            <tr>
+                <td>Čas</td>
+                <td><input type="number" id="cas" min="1" max="1000"> minut</td>
+            </tr>
+            <tr>
+                <td>Hodnocení</td>
+                <td><input type="number" id="hodnoceni" min="1" max="5"></td>
+            </tr>
+            <tr>
+                <td>Datum</td>
+                <td>
+                  <input type="number" id="den" min="1" max="31">.<input type="number" id="mesic" min="1" max="12">.<input type="number" id="rok" min="1800" max="2023">
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>Tagy</td>
+                <td><input type="text" id="tagy" min="1940" max="2020"></td>
+            </tr> -->
+            <tr>
+                <td></td>
+                <td>
+                    <button class="pridat" onclick="saveActivity()">Přidat</button>
+                    <button class="zpet" onclick="checkTurner()">Zpět</button>
+                </td>
+            </tr>
+            <div id="log">sdsd</div>
+          </table>
+        </div>
+        <div id="tableWindow">
+          <table>
+            <div class="panel">
+                <div class="name">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Vidláci</h2>
+                </div>
+                <div class="buttons">
+                    <button onclick="addActivity();"><i class="fa-solid fa-plus"></i></button>
+                    <button id="editButton" onclick="editTurner();"><i class="fas fa-edit"></i></button>
+                </div>
+            </div>
+            <thead>
+              <tr>
+                <th>Jazyk</th>
+                <th>Aktivita</th>
+                <th>Strávený čas</th>
+                <th>Hodnocení</th>
+                <th>Datum</th>
+                <th id="edit">Edit</th>
+                <br>
+              </tr>
+            </thead>
+            <tbody id="activities">
+            </tbody>
+          </table>
+    </main>
+  </body>
+</html>

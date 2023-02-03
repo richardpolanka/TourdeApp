@@ -1,0 +1,65 @@
+@media (max-width: 1200px) 
+{
+    main
+    {
+        font-size: 20px;
+    }
+        .buttons button
+        {
+            font-size: 30px;
+        }
+    /* header
+    {
+        width: 180px;
+    }
+        header div i
+        {
+            font-size: 60px;
+        } */
+}
+@media (max-width: 1000px) 
+{
+    main
+    {
+        font-size: 15px;
+    }
+    /* header
+    {
+        width: 160px;
+    }
+        header div i
+        {
+            font-size: 50px;
+        } */
+}
+@media (max-width: 800px) 
+{
+    main
+    {
+        font-size: 8px;
+    }
+    table, th, td
+    {
+        padding: 0.15rem;
+    }
+    .delete, .edit
+    {
+        font-size: 7px;
+        padding: 0.3rem;
+    }
+    .name i
+    {
+        font-size: 30px;
+    }
+    table input
+    {
+        background-color: #ffffff;
+        border-radius: 15px;
+        font-size: 8px;
+        text-align: center;
+    }
+    /* header
+    {
+        display: none;
+    } */
+}
